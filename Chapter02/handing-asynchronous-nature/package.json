@@ -6,9 +6,9 @@
   "author": "parth ghiya",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^8.5.1"
+    "@types/node": "^15.12.4"
   },
   "dependencies": {
-    "axios": "^0.17.1"
+    "axios": "^0.21.1"
   }
 }
