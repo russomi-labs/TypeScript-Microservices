@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-      "target": "es6",
+      "target": "ES2017",
       "moduleResolution": "node",
       "module": "commonjs",
       "declaration": false,
@@ -19,7 +19,7 @@
      "noEmitHelpers": false
    /*
    We do not want to generate custom helper functions like __awaiter while doing async await, hence we made it noEmitHelpers false
-   */ 
+   */
     },
     "include": [
       "src/**/*"
@@ -29,4 +29,3 @@
     ],
     "compileOnSave": true
   }
-  

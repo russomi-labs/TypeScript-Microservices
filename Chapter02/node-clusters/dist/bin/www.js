@@ -35,11 +35,11 @@ else {
     server.on('error', onError);
     server.on('listening', onListening);
     function normalizePort(val) {
-        let port = (typeof val === 'string') ? parseInt(val, 10) : val;
-        if (isNaN(port))
+        let normalizedPort = (typeof val === 'string') ? parseInt(val, 10) : val;
+        if (isNaN(normalizedPort))
             return val;
-        else if (port >= 0)
-            return port;
+        else if (normalizedPort >= 0)
+            return normalizedPort;
         else
             return false;
     }
