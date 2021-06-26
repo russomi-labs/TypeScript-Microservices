@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.FilterTransform = void 0;
 const stream_1 = require("stream");
 //we create Custom transform and export it, so it can be used anywhere
 class FilterTransform extends stream_1.Transform {
@@ -8,10 +9,10 @@ class FilterTransform extends stream_1.Transform {
         if (!options)
             options = {};
         /*
-        By default, streams expect Buffer/String values.
-        There is an objectMode flag that we have to set in the stream
-        so it can accept any JavaScript object.
-        */
+       By default, streams expect Buffer/String values.
+       There is an objectMode flag that we have to set in the stream
+       so it can accept any JavaScript object.
+       */
         options.objectMode = true;
         super(options);
         this.filterProps = filterprops;
