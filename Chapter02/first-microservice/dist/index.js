@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 //reflect-metadata shim is required, requirement of routing-controllers module.
 require("reflect-metadata");

@@ -2,18 +2,18 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const winston = require("winston");
 exports.logger = new winston.Logger();
-const env = 'development';
+const env = "development";
 // Development Logger
-if (env === 'development') {
+if (env === "development") {
     exports.logger.add(winston.transports.Console, {
-        type: 'verbose',
+        type: "verbose",
         colorize: true,
         prettyPrint: true,
         handleExceptions: true,
-        humanReadableUnhandledException: true
+        humanReadableUnhandledException: true,
     });
 }
-process.on('unhandledRejection', function (reason, p) {
-    exports.logger.warn('system level exceptions at, Possibly Unhandled Rejection at: Promise ', p, ' reason: ', reason);
+process.on("unhandledRejection", function (reason, p) {
+    exports.logger.warn("system level exceptions at, Possibly Unhandled Rejection at: Promise ", p, " reason: ", reason);
 });
 //# sourceMappingURL=logging.js.map

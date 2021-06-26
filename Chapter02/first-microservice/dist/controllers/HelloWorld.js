@@ -19,22 +19,21 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const routing_controllers_1 = require("routing-controllers");
 let HelloWorld = class HelloWorld {
-    constructor() {
-    }
+    constructor() { }
     get() {
         return __awaiter(this, void 0, void 0, function* () {
-            return { "msg": "This is first Typescript Microservice" };
+            return { msg: "This is first Typescript Microservice!!!" };
         });
     }
 };
 __decorate([
-    routing_controllers_1.Get('/'),
+    routing_controllers_1.Get("/"),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], HelloWorld.prototype, "get", null);
 HelloWorld = __decorate([
-    routing_controllers_1.Controller('/hello-world'),
+    routing_controllers_1.Controller("/hello-world"),
     __metadata("design:paramtypes", [])
 ], HelloWorld);
 exports.HelloWorld = HelloWorld;

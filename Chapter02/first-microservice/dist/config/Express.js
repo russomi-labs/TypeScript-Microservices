@@ -14,10 +14,10 @@ class ExpressConfig {
         this.setUpControllers();
     }
     setUpControllers() {
-        const controllersPath = path.resolve('dist', 'controllers');
+        const controllersPath = path.resolve("dist", "controllers");
         //useExpressServer has lots of options, can be viewed at node_modules\routing-controllers\RoutingControllersOptions.d.ts
         routing_controllers_1.useExpressServer(this.app, {
-            controllers: [controllersPath + "/*.js"]
+            controllers: [controllersPath + "/*.js"],
         });
     }
 }
